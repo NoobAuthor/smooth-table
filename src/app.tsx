@@ -10,12 +10,12 @@ interface CounterState {
 
 const useCounterStore = create<CounterState>(set => ({
   count: 0,
-  increment:() => set(state => ({ count: state.count + 1}))
+  increment: () => set(state => ({ count: state.count + 1 }))
 }))
 
 function App() {
   // const [count, setCount] = useState(0)
-  const {count, increment} = useCounterStore()
+  const { count, increment } = useCounterStore()
 
   return (
     <>
